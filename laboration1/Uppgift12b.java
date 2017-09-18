@@ -6,7 +6,7 @@ public class Uppgift12b {
         int pm = 1;
 
         // calculate the sum
-        do {
+        do {   // jag satte term= 1 och då kunde jag använde en while från början då Math.abs(term) > 0.00001
             term = pm * (1 / n);
             sum = sum + term;
             n += 2;
