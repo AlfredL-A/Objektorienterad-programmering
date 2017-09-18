@@ -17,7 +17,9 @@ public class Uppgift10 {
         sc.close();
 
         // calculate class of boat
-        double val = (2 * d + Math.sqrt(A) + L - f) / 2.37;
+        double val = (2 * d + Math.sqrt(A) + L - f) / 2.37; 
+        
+        //måste avrunda till två decimaler "String output = String.format("%.2f", val);
 
         // print class of boat
         JOptionPane.showMessageDialog(null, "Båtens klass: " + val);
