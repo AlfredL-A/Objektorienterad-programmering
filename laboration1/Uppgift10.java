@@ -21,5 +21,7 @@ public class Uppgift10 {
 
         // print class of boat
         JOptionPane.showMessageDialog(null, "Båtens klass: " + val);
+        /* vi behöver avrunda till två decimaler jag använde 
+        String output = String.format("%.2f", val);
     }
 }
