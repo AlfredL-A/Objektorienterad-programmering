@@ -8,7 +8,7 @@ public class Uppgift11 {
         int date = 0, year = 0, day = 0, month = 0;
 
         // do until cancel
-        while (true) {
+        while (true) {   //varför while?
 
             // ask user for input
             indata = JOptionPane.showInputDialog("Ange datum på formen yymmdd: ");
