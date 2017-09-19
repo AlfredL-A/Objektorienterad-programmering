@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// Var har du "Sluta vid CTRL+D" Förstår inte riktigt hur jag ska göra det?
+
 public class Uppgift13 {
     public static void main(String[] args) {
 
@@ -37,3 +39,47 @@ public class Uppgift13 {
         }
     }
 }
+
+/*
+
+----Min version
+
+import javax.swing.*;
+
+public class Uppgift13 {
+
+    public static void main (String[] args) {
+
+        while (true) {
+
+            String indata = JOptionPane.showInputDialog("Please enter what your you are examining");
+
+            int y = Integer.parseInt(indata);
+            int n = y - 1900;
+            int a = n % 19;
+            int b = (7 * a + 1) / 19;
+            int m = (11 * a + 4 - b) % 29;
+            int q = n / 4;
+            int w = (n + q + 31 - m) % 7;
+            int d = 25 - m - w;
+            String month;
+
+            if ((1900 < y) && (y < 2099)) {
+                if (d > 0) {
+                    month = "April";
+                } else {
+                    month = "March";
+                    d = 31 + d;
+                }
+
+                JOptionPane.showMessageDialog(null, "If the year is " + y + " the Easter Eve will be on the " +
+                        d + " of " + month + ".");
+            } else {
+                JOptionPane.showMessageDialog(null, "The year isn´t avaible in this calculation");
+
+
+            }
+        }
+    }
+}
+*/
